@@ -8,7 +8,7 @@ Třetí projekt má za úkol prověřit znalosti získané z celého kurzu. Cíl
 
 Použíté knihovny
 
-Knihovny, které jsou potřeba pro funkci programu jsou obsažené v souboru requirements.txt. Z tohoto souboru se instalují za pomocí příkazu v příkazovém řádku: $ pip install -r requirements.txt
+Veškeré potřebné knihovny pro funkčnost souboru requirements.txt.
 
 Spuštění projektu
 

@@ -15,7 +15,3 @@ Spuštění projektu
 Hlavní soubor projektu projekt_3.py se spouští z příkazového řádku a požaduje dva argumenty (odkaz uzemního celku ke scrapování a druhý název výstupního souboru CSV) a název hlavního souboru projektu viz níže.
 
 Příklad: python projekt_3.py "odkaz_uzemniho_celku" "nazev_vystupni_soubor"
-
-Příklad pro Cheb: python projekt_3.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=5&xnumnuts=4101" "cheb.csv"
-
-Výsledkem je .csv který obsahuje výsledky voleb pro danou oblast.

@@ -20,7 +20,7 @@ def get_codes_links(url):
     return codes, links
 
 
-def header_work(link):
+def header_ww(link):
     page = requests.get(link)
     soup = BeautifulSoup(page.text, "html.parser")
     header = ["code", "location", "registered", "envelopes", "valid"]
@@ -43,7 +43,7 @@ def get_units(links, codes):
 
 def scrape_data(url, output_file):
     codes, links = get_codes_links(url)
-    header = header_work(links[0])
+    header = header_ww(links[0])
     data = get_units(links, codes)
     export_data(output_file, header, data)
     print("Dokončeno.")
@@ -58,7 +58,7 @@ def export_data(output_file, header, data):
 
 def main():
     if len(sys.argv) != 3:
-        print("Zjižtěna chyba v parametrech. Vlože: python projekt_3.py [adresa] [název_souboru]")
+        print("Zadané chybné parametry. Použijte: python projekt_3.py [adresa] [název_souboru]")
         sys.exit(1)
 
     url = sys.argv[1]
